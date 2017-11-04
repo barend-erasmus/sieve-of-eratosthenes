@@ -1,8 +1,3 @@
-# Sieve of Eratosthenes
-
-In mathematics, the sieve of Eratosthenes is a simple, ancient algorithm for finding all prime numbers up to any given limit.
-
-```javascript
 const limit = 30;
 
 const sieve = [];
@@ -30,4 +25,3 @@ for (let i = 10; i <= limit; i = i + 5) {
 console.log(sieve.map((x, index) => {
     return x? index : -1;
 }).filter((x) => x > 1));
-```
